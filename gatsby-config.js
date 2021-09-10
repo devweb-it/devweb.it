@@ -4,7 +4,7 @@ module.exports = {
     title: "My Gatsby Site",
   },
   plugins: [
-    "gatsby-plugin-styled-components",
+    "gatsby-plugin-jss",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
