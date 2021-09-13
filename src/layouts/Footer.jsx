@@ -1,6 +1,3 @@
-import * as React from "react";
+import * as React from 'react';
 
-export const Footer = () => (
-    <>
-    </>
-);
+export const Footer = () => <></>;
