@@ -4,6 +4,7 @@ import '@fontsource/titillium-web/latin.css';
 import '@fontsource/lora/latin.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createUseStyles } from 'react-jss';
+import { IntlProvider } from 'gatsby-plugin-intl';
 import { SEO } from '../components/SEO';
 import labels from '../../contents/labels.yml';
 import { Header } from './Header';
@@ -34,10 +35,13 @@ const useStyles = createUseStyles({
   },
 });
 
-export const Layout = ({ children }) => {
+export const Layout = ({ children, pageContext }) => {
   useStyles();
+  console.log(pageContext);
+  const intl = pageContext.intl;
+
   return (
-    <>
+    <IntlProvider locale={intl.language} defaultLocale={intl.defaultLocale} messages={intl.messages}>
       <SEO />
       <a className="sr-only sr-only-focusable" href="#content">
         {goToMainContent}
@@ -50,7 +54,7 @@ export const Layout = ({ children }) => {
         {children}
       </main>
       <Footer />
-    </>
+    </IntlProvider>
   );
 };
 
