@@ -1,7 +1,8 @@
 module.exports = {
+  // Please use intl translation for texts
   siteMetadata: {
     siteUrl: 'https://www.yourdomain.tld',
-    title: 'My Gatsby Site',
+    title: 'Please use intl translation for texts',
   },
   plugins: [
     'gatsby-plugin-jss',
@@ -42,7 +43,7 @@ module.exports = {
         languages: [`en`, `it`],
         // language file path
         defaultLanguage: `it`,
-        // option to redirect to `/ko` when connecting `/`
+        // option to redirect to `/it` when connecting `/`
         redirect: true,
       },
     },

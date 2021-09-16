@@ -1,3 +1,28 @@
 {
-  "test": "un test"
+  "siteMetadata": {
+    "siteUrl": "https://www.yourdomain.tld",
+    "title": "Il mio sito Gatsby"
+  },
+  "header": {
+    "menu": {
+      "home": "Home",
+      "features": "Funzionalità",
+      "pricing": "Prezzi",
+      "about": "Chi siamo",
+      "faqs": "FAQs",
+      "login": "Entra",
+      "signup": "Registrati",
+      "search": "Cerca"
+    }
+  },
+  "common": {
+    "goToMainContent": "Vai al contenuto principale",
+    "goToFooter": "Vai al footer"
+  },
+  "pages": {
+    "homepage": {
+      "title": "Titolo di default per homepage",
+      "description": "Descrizione di default per homepage"
+    }
+  }
 }

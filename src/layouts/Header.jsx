@@ -46,41 +46,39 @@ export const Header = () => {
           <ul className="nav me-auto">
             <li className="nav-item">
               <a href="#" className="nav-link link-dark px-2 active" aria-current="page">
-                Home
-                <br />
-                {intl.formatMessage({ id: 'test' })}
+                {intl.formatMessage({ id: 'header.menu.home' })}
               </a>
             </li>
             <li className="nav-item">
               <a href="#" className="nav-link link-dark px-2">
-                Features
+                {intl.formatMessage({ id: 'header.menu.features' })}
               </a>
             </li>
             <li className="nav-item">
               <a href="#" className="nav-link link-dark px-2">
-                Pricing
+                {intl.formatMessage({ id: 'header.menu.pricing' })}
               </a>
             </li>
             <li className="nav-item">
               <a href="#" className="nav-link link-dark px-2">
-                FAQs
+                {intl.formatMessage({ id: 'header.menu.faqs' })}
               </a>
             </li>
             <li className="nav-item">
               <a href="#" className="nav-link link-dark px-2">
-                About
+                {intl.formatMessage({ id: 'header.menu.about' })}
               </a>
             </li>
           </ul>
           <ul className="nav">
             <li className="nav-item">
               <a href="#" className="nav-link link-dark px-2">
-                Login
+                {intl.formatMessage({ id: 'header.menu.login' })}
               </a>
             </li>
             <li className="nav-item">
               <a href="#" className="nav-link link-dark px-2">
-                Sign up
+                {intl.formatMessage({ id: 'header.menu.signup' })}
               </a>
             </li>
           </ul>
