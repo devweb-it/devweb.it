@@ -3,6 +3,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: 'https://www.yourdomain.tld',
     title: 'Please use intl translation for texts',
+    twitterAccount: '@Gatsby',
   },
   plugins: [
     'gatsby-plugin-jss',

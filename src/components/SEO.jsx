@@ -2,21 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+import { useIntl } from 'gatsby-plugin-intl';
 import seo from '../../contents/seo.yml';
 
 const { title: seoTitle, description: seoDescription } = seo.homePage;
 
 export const SEO = ({ title, description, socialCard }) => {
+  const intl = useIntl();
   const {
     site: {
-      siteMetadata: { name, siteUrl },
+      siteMetadata: { twitterAccount, siteUrl },
     },
   } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
-            title
+            twitterAccount
             siteUrl
           }
         }
@@ -54,7 +56,7 @@ export const SEO = ({ title, description, socialCard }) => {
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: title ?? seoTitle },
     { name: 'twitter:description', content: description ?? seoDescription },
-    { name: 'twitter:site', content: '@innovazioneGov' },
+    { name: 'twitter:site', content: twitterAccount },
     { name: 'twitter:image', content: socialCardContent },
   ];
 
@@ -62,7 +64,7 @@ export const SEO = ({ title, description, socialCard }) => {
     { name: 'og:title', content: title ?? seoTitle },
     { name: 'og:description', content: description ?? seoDescription },
     { name: 'og:type', content: 'website' },
-    { name: 'og:locale', content: 'it_IT' },
+    { name: 'og:locale', content: `${intl.locale}_${intl.locale.toUpperCase()}` },
     { name: 'og:image', content: socialCardContent },
     { name: 'og:site_name', content: name },
   ];
@@ -70,7 +72,7 @@ export const SEO = ({ title, description, socialCard }) => {
   return (
     <Helmet
       htmlAttributes={{
-        lang: 'it',
+        lang: intl.locale.toUpperCase(),
       }}
       title={title ?? seoTitle}
       link={[...favicons]}
