@@ -37,7 +37,6 @@ const useStyles = createUseStyles({
 
 export const Layout = ({ children, pageContext }) => {
   useStyles();
-  console.log(pageContext);
   const intl = pageContext.intl;
 
   return (
@@ -49,7 +48,7 @@ export const Layout = ({ children, pageContext }) => {
       <a className="sr-only sr-only-focusable" href="#footer">
         {goToFooter}
       </a>
-      <Header />
+      <Header languages={intl.languages} />
       <main className="text-info text-break" id="content">
         {children}
       </main>
@@ -60,4 +59,5 @@ export const Layout = ({ children, pageContext }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  pageContext: PropTypes.func.isRequired,
 };
