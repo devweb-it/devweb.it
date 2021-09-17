@@ -4,13 +4,10 @@ import '@fontsource/titillium-web/latin.css';
 import '@fontsource/lora/latin.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createUseStyles } from 'react-jss';
-import { IntlProvider } from 'gatsby-plugin-intl';
+import { FormattedMessage, IntlProvider } from 'gatsby-plugin-intl';
 import { SEO } from '../components/SEO';
-import labels from '../../contents/labels.yml';
 import { Header } from './Header';
 import { Footer } from './Footer';
-
-const { goToMainContent, goToFooter } = labels;
 
 const useStyles = createUseStyles({
   '@global': {
@@ -43,10 +40,10 @@ export const Layout = ({ children, pageContext }) => {
     <IntlProvider locale={intl.language} defaultLocale={intl.defaultLocale} messages={intl.messages}>
       <SEO />
       <a className="sr-only sr-only-focusable" href="#content">
-        {goToMainContent}
+        <FormattedMessage id="common.goToMainContent" />
       </a>
       <a className="sr-only sr-only-focusable" href="#footer">
-        {goToFooter}
+        <FormattedMessage id="common.goToFooter" />
       </a>
       <Header languages={intl.languages} />
       <main className="text-info text-break" id="content">
