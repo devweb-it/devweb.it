@@ -39,10 +39,10 @@ export const Layout = ({ children, pageContext }) => {
   return (
     <IntlProvider locale={intl.language} defaultLocale={intl.defaultLocale} messages={intl.messages}>
       <SEO />
-      <a className="sr-only sr-only-focusable" href="#content">
+      <a className="visually-hidden-focusable" href="#content">
         <FormattedMessage id="common.goToMainContent" />
       </a>
-      <a className="sr-only sr-only-focusable" href="#footer">
+      <a className="visually-hidden-focusable" href="#footer">
         <FormattedMessage id="common.goToFooter" />
       </a>
       <Header languages={intl.languages} />
