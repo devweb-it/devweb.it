@@ -3,12 +3,11 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 import { useIntl } from 'gatsby-plugin-intl';
-import seo from '../../contents/seo.yml';
-
-const { title: seoTitle, description: seoDescription } = seo.homePage;
 
 export const SEO = ({ title, description, socialCard }) => {
   const intl = useIntl();
+  const seoTitle = intl.formatMessage({ id: 'pages.homepage.title' });
+  const seoDescription = intl.formatMessage({ id: 'pages.homepage.description' });
   const {
     site: {
       siteMetadata: { twitterAccount, siteUrl },
