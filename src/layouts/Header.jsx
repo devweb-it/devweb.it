@@ -48,30 +48,46 @@ export const Header = ({ languages }) => {
         <div className="container d-flex flex-wrap">
           <ul className="nav me-auto">
             <li className="nav-item">
-              <Link to={`/${intl?.locale}`} className="nav-link link-dark px-2 active" aria-current="page">
-                {intl.formatMessage({ id: 'header.menu.home' })}
+              <Link
+                to={intl.formatMessage({ id: 'common.internalLinks.home.linkTo' })}
+                className="nav-link link-dark px-2 active"
+                aria-current="page"
+              >
+                {intl.formatMessage({ id: 'common.internalLinks.home.label' })}
               </Link>
             </li>
             <li className="nav-item">
-              <Link to={`/${intl?.locale}/features`} className="nav-link link-dark px-2">
-                {intl.formatMessage({ id: 'header.menu.features' })}
+              <Link
+                to={intl.formatMessage({ id: 'common.internalLinks.features.linkTo' })}
+                className="nav-link link-dark px-2"
+              >
+                {intl.formatMessage({ id: 'common.internalLinks.features.label' })}
               </Link>
             </li>
             <li className="nav-item">
-              <Link to={`/${intl?.locale}/about`} className="nav-link link-dark px-2">
-                {intl.formatMessage({ id: 'header.menu.about' })}
+              <Link
+                to={intl.formatMessage({ id: 'common.internalLinks.about.linkTo' })}
+                className="nav-link link-dark px-2"
+              >
+                {intl.formatMessage({ id: 'common.internalLinks.about.label' })}
               </Link>
             </li>
           </ul>
           <ul className="nav">
             <li className="nav-item">
-              <Link to={`/${intl?.locale}/login`} className="nav-link link-dark px-2">
-                {intl.formatMessage({ id: 'header.menu.login' })}
+              <Link
+                to={intl.formatMessage({ id: 'common.internalLinks.login.linkTo' })}
+                className="nav-link link-dark px-2"
+              >
+                {intl.formatMessage({ id: 'common.internalLinks.login.label' })}
               </Link>
             </li>
             <li className="nav-item">
-              <Link to={`/${intl?.locale}/signup`} className="nav-link link-dark px-2">
-                {intl.formatMessage({ id: 'header.menu.signup' })}
+              <Link
+                to={intl.formatMessage({ id: 'common.internalLinks.signup.linkTo' })}
+                className="nav-link link-dark px-2"
+              >
+                {intl.formatMessage({ id: 'common.internalLinks.signup.label' })}
               </Link>
             </li>
           </ul>

@@ -5,11 +5,6 @@
   },
   "header": {
     "menu": {
-      "home": "Home",
-      "features": "Funzionalità",
-      "about": "Chi siamo",
-      "login": "Entra",
-      "signup": "Registrati",
       "search": "Cerca"
     }
   },
