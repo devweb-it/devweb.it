@@ -7,17 +7,61 @@
     "menu": {
       "home": "Home",
       "features": "Funzionalità",
-      "pricing": "Prezzi",
       "about": "Chi siamo",
-      "faqs": "FAQs",
       "login": "Entra",
       "signup": "Registrati",
       "search": "Cerca"
     }
   },
+  "footer": {
+    "footerA11y": "Per segnalazioni ed eventuali suggerimenti sull'accessibilità del sito, scrivi a <a class='text-decoration-none font-weight-semibold text-white' href='mailto:accessibilita@devweb.it' aria-label='accessibilita@devweb.it'>accessibilita@devweb.it</a>",
+    "companyRights": "© 2021 Company, Tutti i diritti riservati."
+  },
   "common": {
     "goToMainContent": "Vai al contenuto principale",
-    "goToFooter": "Vai al footer"
+    "goToFooter": "Vai al footer",
+    "ariaLabel": {
+      "menu": "Menu principale",
+      "toggleMenu": "Mostra / Nascondi la navigazione",
+      "slimMenu": "Menu progetti correlati",
+      "breadcrumb": "Sei qui",
+      "externalLink": "Link esterno",
+      "emailText": "Indirizzo email"
+    },
+    "internalLinks": {
+      "home": {
+        "linkTo": "/it/",
+        "label": "Home"
+      },
+      "features": {
+        "linkTo": "/it/funzionalita",
+        "label": "Funzionalità"
+      },
+      "about": {
+        "linkTo": "/it/chi-siamo",
+        "label": "Chi siamo"
+      },
+      "login": {
+        "linkTo": "/it/login",
+        "label": "Entra"
+      },
+      "signup": {
+        "linkTo": "/it/registrati",
+        "label": "Registrati"
+      }
+    },
+    "externalLinks": {
+      "devweb": {
+        "linkTo": "https://devweb.it",
+        "label": "DevWeb",
+        "ariaLabel": "Link a DevWeb.it"
+      }
+    },
+    "newsletter": {
+      "subscribe": "Registrati",
+      "subscribeText": "Registrati alla nostra newsletter",
+      "subscribeSubText": "Uscita mensile su quanto di nuovo ed eccitante dalla nostra azienda."
+    }
   },
   "pages": {
     "homepage": {

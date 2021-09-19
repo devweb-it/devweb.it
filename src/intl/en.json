@@ -7,17 +7,60 @@
     "menu": {
       "home": "Home",
       "features": "Features",
-      "pricing": "Pricing",
       "about": "About",
-      "faqs": "FAQs",
       "login": "Login",
       "signup": "Signup",
       "search": "Search"
     }
   },
+  "footer": {
+    "footerA11y": "Per segnalazioni ed eventuali suggerimenti sull'accessibilità del sito, scrivi a <a class='text-decoration-none font-weight-semibold text-white' href='mailto:accessibilita@devweb.it' aria-label='accessibilita@devweb.it'>accessibilita@devweb.it</a>",
+    "companyRights": "© 2021 Company, Inc. All rights reserved."
+  },
   "common": {
     "goToMainContent": "Go to main content",
-    "goToFooter": "Go to footer section"
+    "goToFooter": "Go to footer section",
+    "ariaLabel": {
+      "menu": "Main menu",
+      "toggleMenu": "Show / Hide navigation",
+      "slimMenu": "Related projects menu",
+      "breadcrumb": "You are here",
+      "externalLink": "External link"
+    },
+    "internalLinks": {
+      "home": {
+        "linkTo": "/en",
+        "label": "Home"
+      },
+      "features": {
+        "linkTo": "/en/features",
+        "label": "Features"
+      },
+      "about": {
+        "linkTo": "/en/about",
+        "label": "About"
+      },
+      "login": {
+        "linkTo": "/en/login",
+        "label": "Login"
+      },
+      "signup": {
+        "linkTo": "/en/signup",
+        "label": "Signup"
+      }
+    },
+    "externalLinks": {
+      "devweb": {
+        "linkTo": "https://devweb.it",
+        "label": "DevWeb",
+        "ariaLabel": "Link to DevWeb.it"
+      }
+    },
+    "newsletter": {
+      "subscribe": "Subscribe",
+      "subscribeText": "Subscribe to our newsletter",
+      "subscribeSubText": "Monthly digest of whats new and exciting from us."
+    }
   },
   "pages": {
     "homepage": {
