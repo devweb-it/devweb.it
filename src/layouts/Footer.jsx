@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { useIntl } from 'gatsby-plugin-intl';
+import PropTypes from 'prop-types';
 import { ExternalLink } from '../components/ExternalLink';
 
 const MainFooter = ({ intl }) => (
@@ -79,7 +80,7 @@ const MainFooter = ({ intl }) => (
             <p>{intl.formatMessage({ id: 'common.newsletter.subscribeSubText' })}</p>
             <div className="d-flex w-100 gap-2">
               <label htmlFor="newsletter1" className="visually-hidden">
-              {intl.formatMessage({ id: 'common.newsletter.subscribeText' })}
+                {intl.formatMessage({ id: 'common.newsletter.subscribeText' })}
               </label>
               <input
                 id="newsletter"
@@ -144,4 +145,8 @@ export const Footer = () => {
       <MainFooter intl={intl} />
     </footer>
   );
+};
+
+MainFooter.propTypes = {
+  intl: PropTypes.object.isRequired,
 };

@@ -56,5 +56,5 @@ export const Layout = ({ children, pageContext }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  pageContext: PropTypes.func.isRequired,
+  pageContext: PropTypes.object.isRequired,
 };
