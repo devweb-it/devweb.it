@@ -61,6 +61,14 @@
     "homepage": {
       "title": "Default title for homepage",
       "description": "Default description for homepage"
+    },
+    "404": {
+      "title": "Not found",
+      "description": "Page not found",
+      "text1": "Sorry",
+      "text2": "we couldn’t find what you were looking for.",
+      "text3": "Try creating a page in ",
+      "text4": "Go home"
     }
   }
 }

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
+import { useIntl } from 'gatsby-plugin-intl';
 
 // styles
 const pageStyles = {
@@ -25,31 +26,34 @@ const codeStyles = {
 };
 
 // markup
-const NotFoundPage = () => (
-  <main style={pageStyles}>
-    <title>Not found</title>
-    <h1 style={headingStyles}>Page not found</h1>
-    <p style={paragraphStyles}>
-      Sorry{' '}
-      <span role="img" aria-label="Pensive emoji">
-        😔
-      </span>{' '}
-      we couldn’t find what you were looking for.
-      <br />
-      {
-        // eslint-disable-next-line no-undef
-        process.env.NODE_ENV === 'development' ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null
-      }
-      <br />
-      <Link to="/">Go home</Link>.
-    </p>
-  </main>
-);
+const NotFoundPage = () => {
+  const intl = useIntl();
+  return (
+    <main style={pageStyles}>
+      <title>{intl.formatMessage({ id: 'pages.404.title' })}</title>
+      <h1 style={headingStyles}>{intl.formatMessage({ id: 'pages.404.description' })}</h1>
+      <p style={paragraphStyles}>
+        {intl.formatMessage({ id: 'pages.404.text1' })}{' '}
+        <span role="img" aria-label="Pensive emoji">
+          😔
+        </span>{' '}
+        {intl.formatMessage({ id: 'pages.404.text2' })}
+        <br />
+        {
+          // eslint-disable-next-line no-undef
+          process.env.NODE_ENV === 'development' ? (
+            <>
+              <br />
+              {intl.formatMessage({ id: 'pages.404.text3' })} <code style={codeStyles}>src/pages/</code>.
+              <br />
+            </>
+          ) : null
+        }
+        <br />
+        <Link to="/">{intl.formatMessage({ id: 'pages.404.text4' })}</Link>.
+      </p>
+    </main>
+  );
+};
 
 export default NotFoundPage;
