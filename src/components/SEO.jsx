@@ -65,7 +65,7 @@ export const SEO = ({ title, description, socialCard }) => {
     { name: 'og:type', content: 'website' },
     { name: 'og:locale', content: `${intl.locale}_${intl.locale.toUpperCase()}` },
     { name: 'og:image', content: socialCardContent },
-    { name: 'og:site_name', content: name },
+    { name: 'og:site_name', content: title ?? seoTitle },
   ];
 
   return (

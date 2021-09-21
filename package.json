@@ -14,7 +14,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "deploy": "gh-pages -u 'Deploy Bot <no-reply@teamdigitale.governo.it>' -d public",
-    "lint": "eslint src --ext .js"
+    "lint": "eslint src --ext .js,.jsx"
   },
   "dependencies": {
     "@fontsource/lora": "^4.5.0",
