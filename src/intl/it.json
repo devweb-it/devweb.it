@@ -5,7 +5,7 @@
   },
   "header": {
     "menu": {
-      "search": "Cerca"
+      "search": "Cerca..."
     }
   },
   "footer": {
@@ -29,11 +29,11 @@
         "label": "Home"
       },
       "features": {
-        "linkTo": "/it/funzionalita",
+        "linkTo": "/it/features",
         "label": "Funzionalità"
       },
       "about": {
-        "linkTo": "/it/chi-siamo",
+        "linkTo": "/it/about",
         "label": "Chi siamo"
       },
       "login": {
@@ -41,7 +41,7 @@
         "label": "Entra"
       },
       "signup": {
-        "linkTo": "/it/registrati",
+        "linkTo": "/it/signup",
         "label": "Registrati"
       }
     },

@@ -113,7 +113,12 @@ export const Header = ({ languages }) => {
             <span className="fs-4">{intl.formatMessage({ id: 'siteMetadata.title' })}</span>
           </a>
           <form className="col-12 col-lg-auto mb-3 mb-lg-0">
-            <input type="search" className="form-control" placeholder="Search..." aria-label="Search" />
+            <input
+              type="search"
+              className="form-control"
+              placeholder={intl.formatMessage({ id: 'header.menu.search' })}
+              aria-label="Search"
+            />
           </form>
         </div>
       </header>
