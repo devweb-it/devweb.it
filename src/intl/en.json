@@ -74,6 +74,10 @@
     "features": {
       "title": "Default title for features",
       "description": "Default description for features"
+    },
+    "about": {
+      "title": "Default title for about",
+      "description": "Default description for about"
     }
   }
 }

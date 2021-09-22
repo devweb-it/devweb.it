@@ -74,6 +74,10 @@
     "features": {
       "title": "Titolo di default per features",
       "description": "Descrizione di default per features"
+    },
+    "about": {
+      "title": "Titolo di default per about",
+      "description": "Descrizione di default per about"
     }
   }
 }
