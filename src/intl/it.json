@@ -70,6 +70,10 @@
       "text2": "Non riusciamo a trovare quello che stai cercando.",
       "text3": "Prova a creare una pagina in ",
       "text4": "Torna alla home"
+    },
+    "features": {
+      "title": "Titolo di default per features",
+      "description": "Descrizione di default per features"
     }
   }
 }

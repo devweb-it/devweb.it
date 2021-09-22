@@ -20,7 +20,8 @@
       "toggleMenu": "Show / Hide navigation",
       "slimMenu": "Related projects menu",
       "breadcrumb": "You are here",
-      "externalLink": "External link"
+      "externalLink": "External link",
+      "emailText": "Email address"
     },
     "internalLinks": {
       "home": {
@@ -69,6 +70,10 @@
       "text2": "we couldn’t find what you were looking for.",
       "text3": "Try creating a page in ",
       "text4": "Go home"
+    },
+    "features": {
+      "title": "Default title for features",
+      "description": "Default description for features"
     }
   }
 }
