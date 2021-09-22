@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import { useIntl } from 'gatsby-plugin-intl';
+import { SEO } from '../components/SEO';
 
 // styles
 const pageStyles = {
@@ -29,30 +30,37 @@ const codeStyles = {
 const NotFoundPage = () => {
   const intl = useIntl();
   return (
-    <main style={pageStyles}>
-      <title>{intl.formatMessage({ id: 'pages.404.title' })}</title>
-      <h1 style={headingStyles}>{intl.formatMessage({ id: 'pages.404.description' })}</h1>
-      <p style={paragraphStyles}>
-        {intl.formatMessage({ id: 'pages.404.text1' })}{' '}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{' '}
-        {intl.formatMessage({ id: 'pages.404.text2' })}
-        <br />
-        {
-          // eslint-disable-next-line no-undef
-          process.env.NODE_ENV === 'development' ? (
-            <>
-              <br />
-              {intl.formatMessage({ id: 'pages.404.text3' })} <code style={codeStyles}>src/pages/</code>.
-              <br />
-            </>
-          ) : null
-        }
-        <br />
-        <Link to="/">{intl.formatMessage({ id: 'pages.404.text4' })}</Link>.
-      </p>
-    </main>
+    <>
+      <SEO
+        title={intl.formatMessage({ id: 'pages.404.title' })}
+        description={intl.formatMessage({ id: 'pages.404.description' })}
+        socialCard="abilitazione.jpg"
+      />
+      <main style={pageStyles}>
+        <title>{intl.formatMessage({ id: 'pages.404.title' })}</title>
+        <h1 style={headingStyles}>{intl.formatMessage({ id: 'pages.404.description' })}</h1>
+        <p style={paragraphStyles}>
+          {intl.formatMessage({ id: 'pages.404.text1' })}{' '}
+          <span role="img" aria-label="Pensive emoji">
+            😔
+          </span>{' '}
+          {intl.formatMessage({ id: 'pages.404.text2' })}
+          <br />
+          {
+            // eslint-disable-next-line no-undef
+            process.env.NODE_ENV === 'development' ? (
+              <>
+                <br />
+                {intl.formatMessage({ id: 'pages.404.text3' })} <code style={codeStyles}>src/pages/</code>.
+                <br />
+              </>
+            ) : null
+          }
+          <br />
+          <Link to="/">{intl.formatMessage({ id: 'pages.404.text4' })}</Link>.
+        </p>
+      </main>
+    </>
   );
 };
 
