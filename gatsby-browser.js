@@ -1,8 +1,7 @@
-import React from 'react';
-import { Layout } from './src/layouts/Layout';
 import config from './gatsby-config.js';
 
-export const wrapPageElement = ({ element, props }) => <Layout {...props}>{element}</Layout>;
+// disabled Loyout injection to display a simple image
+// export const wrapPageElement = ({ element, props }) => <Layout {...props}>{element}</Layout>;
 
 const mamotoTracking = (location) => {
   const { _paq } = window;

@@ -1,9 +1,9 @@
 module.exports = {
   // Please use intl translation for texts
   siteMetadata: {
-    siteUrl: 'https://www.yourdomain.tld',
-    title: 'Please use intl translation for texts',
-    twitterAccount: '@Gatsby',
+    siteUrl: 'https://devweb.it',
+    title: 'Devweb.it',
+    twitterAccount: '@devweb-it',
   },
   plugins: [
     'gatsby-plugin-jss',
@@ -39,11 +39,12 @@ module.exports = {
       resolve: `gatsby-plugin-intl`,
       options: {
         // language JSON resource path
+        // eslint-disable-next-line no-undef
         path: `${__dirname}/src/intl`,
         // supported language
-        languages: [`en`, `it`],
+        languages: ['it', 'en'],
         // language file path
-        defaultLanguage: `it`,
+        defaultLanguage: 'it',
         // option to redirect to `/it` when connecting `/`
         redirect: true,
       },
